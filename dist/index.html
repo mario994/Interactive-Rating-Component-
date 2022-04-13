@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating Component Main</title>
+    <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card-container hidden">
+            <div class='container-img'>
+
+                <img src="illustration-thank-you.svg" alt="">
+                <!-- score class save currentScore  -->
+                <p>You selected <span class="score"></span> out of 5</p>
+            
+            </div>
+
+            <div class="container-gratitude">
+
+                <div>
+                    <h2 class="title">Thank you!</h2>
+                    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get a touch!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        
+        <form>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <h2 class="title">How did we do?</h2>
+            <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help
+                us improve our offering!</p>
+
+            <div class="container-points">
+                <input type="radio" id="1" name="punctuation" value="1">
+                <label class="points" for="1">1</label>
+                <input type="radio" id="2" name="punctuation" value="2">
+                <label class="points" for="2">2</label>
+                <input type="radio" id="3" name="punctuation" value="3">
+                <label class="points" for="3">3</label>
+                <input type="radio" id="4" name="punctuation" value="4">
+                <label class="points" for="4">4</label>
+                <input type="radio" id="5" name="punctuation" value="5">
+                <label class="points" for="5">5</label>
+            </div>
+            <input class="btn" type="submit" value="SUBMIT">
+
+        </form>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

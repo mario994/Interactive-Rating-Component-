@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/*CSS general variables*/
+
+:root {
+    --submitButtonColor: hsl(25, 97%, 53%);
+    --titleColor: hsl(0, 0%, 100%);
+    --paragraphColor: hsl(217, 12%, 63%);
+    --selectedPointsColor: hsl(216, 12%, 54%);
+    --unselectPointColor: hsl(213, 19%, 25%);
+    --cardColor: hsl(213, 19%, 18%);
+    --bgColor: hsl(216, 12%, 8%);
+    --paragraphFontSize: 15px;
+    --smoothtransition: all 0.3s;
+}
+
+/*
+===================
+Initial styles
+==================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+====================
+General Styles
+====================
+*/
+
+body {
+    font-family: 'Overpass', sans-serif;
+    color: var(--titleColor);
+    height: 100vh;
+    background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    background-color: var(--cardColor);
+    max-width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 15px 25px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: var(--paragraphFontSize);
+    font-weight: 400;
+    margin: 20px 0;
+    color: var(--paragraphColor);
+}
+
+input[type="radio"] {
+    /*Delete radio buttons*/
+    display: none;
+}
+
+/*
+===================
+icon style
+===================
+*/
+
+.star i {
+    color: var(--submitButtonColor);
+    padding: 12px 14px;
+    background-color: var(--unselectPointColor);
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/*
+ ======================
+ container card styles
+ ======================
+ */
+.container-img,
+.container-gratitude {
+    text-align: center;
+}
+
+.container-img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container-img p {
+    padding: 10px 20px;
+    color: var(--submitButtonColor);
+    background-color: var(--unselectPointColor);
+    border-radius: 20px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.container-gratitude {
+    display: flex;
+    align-items: center;
+}
+
+.container-gratitude p {
+    padding: 10px 0;
+    color: var(--paragraphColor);
+    line-height: 1.4rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+==============
+form styles
+=============
+*/
+.container-points {
+    display: flex;
+    justify-content: space-between;
+}
+
+.points {
+    padding: 15px 20px;
+    background-color: var(--unselectPointColor);
+    border-radius: 50%;
+    transition: var(--smoothtransition);
+}
+
+.points:hover {
+    background-color: var(--submitButtonColor);
+    cursor: pointer;
+}
+
+.btn {
+    background-color: var(--submitButtonColor);
+    color: var(--titleColor);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 30px 0 10px 0;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    display: block;
+    transition: var(--smoothtransition);
+}
+
+.btn:hover {
+    background-color: var(--titleColor);
+    color: var(--submitButtonColor);
+    cursor: pointer;
+}
+
+.selectedBtn {
+    background-color: var(--selectedPointsColor);
+}
