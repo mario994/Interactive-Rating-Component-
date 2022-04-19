@@ -1,4 +1,4 @@
-import css from './css/main.css';
+
 const form = document.querySelector('form');
 const points = document.querySelectorAll('.points');
 const card =document.querySelector('.card-container');
@@ -38,7 +38,7 @@ points.forEach((point, i, arr) => {
         arr.forEach(element => {
             element.classList.remove('selectedBtn');
         });
-        //Second set the selectedBtn class whent user's click 
+        //Second set the selectedBtn class when user's click 
         point.classList.toggle('selectedBtn');
     });
 });
